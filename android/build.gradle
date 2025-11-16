@@ -42,6 +42,11 @@ android {
     buildConfigField "boolean", "IS_AMAZON_DRM_ENABLED", getExtOrDefault("isAmazonDrmEnabled")
   }
 
+  buildFeatures {
+    buildConfig true
+  }
+
+
   buildTypes {
     release {
       minifyEnabled false
